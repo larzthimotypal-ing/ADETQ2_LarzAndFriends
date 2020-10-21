@@ -1,0 +1,29 @@
+﻿<br />
+<div class="container row p-0 m-0">
+
+    <div class="col-6 ">
+        <h2 class="page-title">Members List</h2>
+    </div>
+    <div class="col-3 offset-3">
+        <a asp-action="Upsert" asp-controller="Members" class="btn form-control text-white add-member-btn m-1">
+            Add <span class="add-member-dissolve">Member</span> 
+        </a>
+    </div>
+    <div class="col-12 border p-4 members-table-area">
+        <table id="DT_load" class="table table-bordered members-table" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Student Number</th>
+                    <th>Age</th>
+                    <th>Address</th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/membersList.js"></script>
+}

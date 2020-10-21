@@ -1,0 +1,331 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    width: 100%;
+    background:#262626;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+/*hero section*/
+
+.hero-section{
+    min-height: 500px;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.hero-section-showcase{
+    width:100%;
+    height:100%;
+}
+
+.hero-section-main-title {
+    letter-spacing: 2px;
+    margin: 20px;
+    margin-bottom: 40px;
+    color: white;
+}
+.hero-section-main-subtitle {
+    margin: 20px;
+    color: white;
+}
+
+.hero-section-image {
+    width: 594px; 
+    height: 420px;
+}
+
+
+.cta {
+    margin-top: 3rem;
+    width: 120px;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: #4d958aff;
+    color: white;
+}
+
+    .cta:hover {
+        background: #164c68ff;
+        color: white;
+    }
+
+.student-number-appear{
+    display: none;
+}
+
+/*Mobile view*/
+@media screen and (max-width: 767px){
+
+    .hero-section{
+        min-height: 300px;
+        min-width: 90%;
+    }
+
+    .container{
+        min-width: 80%;
+    }
+    .hero-section-image{
+        display: none;
+    }
+
+    .hero-section-main-title{
+        font-size: 3rem;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .hero-section-main-subtitle{
+        margin: 10px 0 20px;
+        font-size: 2rem;
+    }
+
+    span.add-member-dissolve{
+        display: none;
+    }
+
+    .create-new-member{
+        padding: 3px;
+    }
+    span.back-btn-dissolve{
+        display: none;
+    }
+
+    .fillup-form label{
+        color: white;
+    }
+
+    .container{
+        min-width: 90%;
+    }
+    
+}
+
+
+@media screen and (max-width:480px){
+
+
+    .hero-section-main-subtitle{
+        font-size: 1.2rem;
+    }
+
+    .hero-section-main-title{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .footer-text{
+        font-size: 12px;
+    }
+
+    .footer-text a {
+        font-size: 12px;
+    }
+
+    .upsert-btn{
+        min-width: 80px;
+    }
+
+    .upsert-btn-row{
+        margin-right: 2rem;
+        margin-left: 0;
+    }
+
+    .upsert-btn-row-wrap{
+        padding: 0;
+    }
+
+    .student-number-dissolve{
+        display: none;
+    }
+
+    .student-number-appear{
+        display: block;
+    }
+}
+
+
+/*Navbar Custom*/
+.header{
+    background: #bc5a51ff;
+}
+
+.group-name{
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+    letter-spacing: 1.4px;
+}
+
+.group-name:hover{
+    text-decoration:none;
+    color: white;
+}
+
+.nav-cta {
+    background: #ffff99;
+    font-weight: 600;
+    letter-spacing: .6px;
+}
+
+.nav-cta:hover {
+    background: #b1b151;
+}
+
+.nav-link:hover{
+  transform: scale(1.1);
+}
+
+
+/*Members Table*/
+.page-title{
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.add-member-btn {
+    background: #4d958aff;
+
+}
+
+.add-member-btn:hover {
+    background: #164c68ff;
+}
+
+.members-table{
+    background: white;
+}
+
+.members-table-area {
+    background: #3a3a3a;
+}
+
+.dataTables_length label{
+    color: white;
+}
+
+.table thead th{
+    background: #ffff99;
+    border: 1px #3a3a3a solid;
+}
+tbody .odd td{
+    background: #ffffcc;
+    border: #3a3a3a solid 1px;
+}
+
+tbody .even td{
+    background-color:#ffff99;
+    border: #3a3a3a solid 1px;
+}
+.dataTables_filter label{
+    color: white;
+} 
+.dataTables_info{
+    display: none;
+}
+
+a.paginate_button{
+    color: white;
+}
+
+.members-table-area{
+    overflow: auto;
+}
+
+@media screen and (max-width: 375px){
+    a.group-name{
+        font-size: 1rem;
+    }
+
+    .add-member-btn{
+        margin: 0;
+        padding: 3px;
+    }
+}
+
+/*Fill Up Form*/
+.fillup-form label{
+    color: white;
+}
+
+.create-new-member{
+    padding: 30px;
+}
+
+.upsert-btn-row-wrap{
+    justify-content: center;
+}

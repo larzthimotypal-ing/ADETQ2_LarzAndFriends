@@ -1,0 +1,66 @@
+﻿
+@model ADETQ2_LarzAndFriends.Models.Members
+
+<br />
+<h2 class="page-title">@(Model.Id!=0 ? "Edit" : "Create") Student Info</h2>
+<br />
+
+<div class="border container create-new-member">
+    <form method="post">
+        @if (Model.Id != 0)
+        {
+            <input type="hidden" asp-for="Id" />
+        }
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        <div class="form-group row fillup-form">
+            <div class="col-3">
+                <label asp-for="Name">Name</label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row fillup-form">
+            <div class="col-3">
+                <label asp-for="StudentNumber">Student<span class="student-number-dissolve"> Number</span> <span class="student-number-appear">#</span></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="StudentNumber" class="form-control" />
+                <span asp-validation-for="StudentNumber" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row fillup-form">
+            <div class="col-3">
+                <label asp-for="Age">Age</label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Age" class="form-control" />
+                <span asp-validation-for="Age" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row fillup-form">
+            <div class="col-3">
+                <label asp-for="Address">Address</label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row upsert-btn-row-wrap">
+            <div class="col-3 upsert-btn-row submit">
+                <button type="submit" class="btn btn-primary form-control upsert-btn">
+                    @(Model.Id !=0 ? "Update" : "Create")
+                </button>
+            </div>
+            <div class="col-3">
+                <a asp-action="Index" class="btn btn-success form-control upsert-btn" >Back<span class="back-btn-dissolve"> to List</span></a>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
